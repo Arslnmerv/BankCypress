@@ -1,0 +1,55 @@
+Interface
+    
+    1) Interface yapilarda concrete method asla creat edilemez, sadece abstract methodlar creat edilir
+    
+    2) Java multiple inheritance desteklemez. Ancak interface parent' ler multiple inheritance' i
+    destekler
+    
+    3) 1' den fazla parent class' larda ayný isimli methodlarin olmasi durumunda, child class ayni
+    isimli farkli body' li method' lar icin secim yapamaz. Fakat Interface' lerde methodlarin body' leri
+    olmadigindan ayni isimli method' lar birbiriyle tamamen ayni oldugu icin, secim soz konusu olmaz.
+    Child Class parent Interface' den ayni isimli methodlar' dan birini override ederek bu sorun cozulur
+    
+    TRICK ===> Parent Interface ayni isimli farkli return type' li method' lar child class' ta CTE verir
+    
+    4) Interface yapilarda tum method' lar abstract olmaz zorunda oldugundan method signature "abstract"
+    keyword' u yazilmayabilir
+    
+    public abstract void koltuk(); ===> abstract method abstract keyword kullanilmis
+    public void ayna(); ===> abstract method abstract keyword kullanilmamis
+    
+    5) Interface' lerdeki tum member' lar public oldugu icin Access Modifier yazilmasa da public ile
+    ayni islemi yapar
+    
+    public void ayna(); <===> void ayna(); ===> Ayni islemi yaparlar
+    
+    TRICK ===> Normal class' larda access modifier yazilmazsa default olur, ancak Interface' lerde
+    access modifier yazilmazsa public olur
+    
+    6) Interface' ler kendi arasinda parent child iliskisi kurabilir. Interface' leri bi class' a
+    parent yapmak icin " implements " keyword' u kullanilir. Class' lari bir class' a parent yapmak icin
+    " extends " keyword' u kullanilir
+    Interface’leri bir class’a parent yapmak icin “implements” keywordu kullanilir. 
+    Class’lari bir class’a parent yapmak icin “extends” keywordu kullanilir.
+  7) interface ler veriableler mutlakka finaldr
+  final veriableler italik bold ve buyuk harfle baslar
+  final veriableler initialize edilmezse cte verir
+  
+  8)interface ler veriableler mutlakka statictir
+  dolayýsýyle objeyi creat etmeden interface ismi ile ulasýlabilir
+  
+  9)interfacelerde tum member lar publictir.
+  dolayýsýyla tum interface veriableleri-->public+static+final
+  yazsa da yazmasa da oyledir
+  
+  
+  
+  
+  
+  
+  
+  
+    class ===> class : extends
+    interface ===> interface : extends
+    class ===> interface : implements
+    interface ===> class : O-LA-MAZ. Interface' in parent' i class olamaz

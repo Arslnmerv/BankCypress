@@ -1,0 +1,17 @@
+pFiyatackage Projects_05.Laptop;
+
+
+public class Runner {
+
+	public static void main(String[] args) {
+		PriceForOneLaptop p1 = new PriceForOneLaptop();
+        int num=p1.getFiyat(1100000);
+        System.out.println(num);
+        System.out.println(p1.getIndirim(num, 20));
+    
+      
+    }
+	}
+
+	
+

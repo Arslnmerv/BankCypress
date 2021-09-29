@@ -1,0 +1,33 @@
+
+(package Projects_05.Laptop;
+
+import java.util.ArrayList;
+
+public class PriceForOneLaptop {
+
+    public int getFiyat(int laptopID) {
+
+        Data data = new Data();
+
+        ArrayList<String> arrayList = data.AllData(laptopID);
+
+      int totalTutar= Calculation.getColor(arrayList)+Calculation.getCPU(arrayList)+Calculation.getRam(arrayList)
+       +Calculation.getSize(arrayList);
+      
+	return totalTutar;
+		
+    
+
+        
+    }
+
+
+   
+
+    public int getIndirim(int num, int indirim) {
+
+        return num - (num * indirim / 100);
+
+    }
+
+}

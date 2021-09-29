@@ -1,0 +1,4 @@
+ Fifo :  First in first out --> Elemanlar ilk eklenen ilk silinir eczane yemekhane vs sektorlerde zmana kaydý olam elemanlarin tutullmasinda kullanilir.
+        Queue intreface'nin iki subClass constructoru ile obj creat edileblir.
+        LinkedList constructoru ile obj creat edilirse elemanlar Queue icinde isertion order'e gore siralanir
+        PriorityQueue constructoru ile obj creat edilirse elemanlar Queue icindejava'nin kendine ozel algoritmasina gore siralanir.
