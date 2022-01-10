@@ -1,4 +1,5 @@
 
+
   Cypress.on('uncaught:exception', (err, runnable) => {
    
     return false
@@ -12,3 +13,4 @@
       cy.get('#password').type('Team68+')
     });
   });
+
