@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('LoginAdmin',()=> {
+    cy.visit("https://www.gmibank.com/")
+      cy.get('#account-menu > .dropdown-toggle').click()
+      cy.get('#login-item').click()
+      cy.get('#username').type('team68Admin')
+      cy.get('#password').type('Team68+')
+      cy.get('.btn-primary').click()
+})
+Cypress.Commands.add('LoginEmployee',()=> {
+    cy.visit("https://www.gmibank.com/")
+      cy.get('#account-menu > .dropdown-toggle').click()
+      cy.get('#login-item').click()
+      cy.get('#username').type('employee32')
+      cy.get('#password').type('team32team32-')
+      cy.get('.btn-primary').click()
+})
+import 'cypress-file-upload'
