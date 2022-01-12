@@ -44,4 +44,5 @@ Cypress.Commands.add('CreateANewCustomer',()=> {
          cy.get('[href="/tp-customer"] > span').click()
          cy.get('#jh-create-entity > span').click()
 })
+
 import 'cypress-file-upload'
