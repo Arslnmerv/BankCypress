@@ -25,7 +25,7 @@ describe ('Müşteri adresi oluşturulabilmelidir.' ,()=> {
      page.getPhoneNumber().type(this.data.phoneNumber)
      page.getZipCode().type(this.data.zipCode)
      page.getSsn().type(this.data.Ssn)
-    //  page.getCity().type(this.data.city)
+
 
 
     // Adres boş bırakılamamalıdır.
@@ -69,9 +69,9 @@ describe ('Müşteri adresi oluşturulabilmelidir.' ,()=> {
     //Eyalet sadece USA eyaletleri olarak girilmelidir
     page.getState().type(this.data.invalidState)
     page.getState().should('have.class', 'av-invalid')
-     })
+  })
 
 
-   })
+  })
    
 })
