@@ -39,4 +39,9 @@ Cypress.Commands.add('LoginEmployee',()=> {
       cy.get('#password').type('team32team32-')
       cy.get('.btn-primary').click()
 })
+Cypress.Commands.add('CreateANewCustomer',()=> {
+  cy.get('#entity-menu > .dropdown-toggle').click()
+         cy.get('[href="/tp-customer"] > span').click()
+         cy.get('#jh-create-entity > span').click()
+})
 import 'cypress-file-upload'
