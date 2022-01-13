@@ -1,4 +1,4 @@
-//import gmiBankPom from "../Pom/gmiBankPom";
+import gmiBankPom from "../Pom/gmiBankPom";
 ///-<reference-types"cypress"-/>
 Cypress.on("uncaught:exception", (err, runnable) => {
   return false;
@@ -60,16 +60,6 @@ describe("US 001", () => {
   });
 
   it.only('register pozitif test',function(){
-    let faker=require('faker'); 
-    //faker.seed(404)
-  let firstName = faker.Name.findName();
-   //gmibankpom.getBank();
-   cy.visit("https://www.gmibank.com/")
-    //gmibankpom.getLoginButonu().click();
-    cy.get("#account-menu > .dropdown-toggle").click()
-    //gmibankpom.getRegister().click();
-    cy.get('[href="/account/register"]').click()
-    cy.get("#firstname").type(firstName);
     // gmibankpom.getBank();
     // gmibankpom.getLoginButonu().click();
     // gmibankpom.getRegister().click();
