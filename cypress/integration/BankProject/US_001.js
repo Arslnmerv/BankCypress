@@ -1,4 +1,4 @@
-import gmiBankPom from "../Pom/gmiBankPom";
+import gmiBankPom from "../PageObjectRespository/gmiBankPom";
 ///-<reference-types"cypress"-/>
 Cypress.on("uncaught:exception", (err, runnable) => {
   return false;
@@ -6,12 +6,12 @@ Cypress.on("uncaught:exception", (err, runnable) => {
 
 describe("US 001", () => {
   before(function () {
-    cy.fixture('creds').then(function (data) {
+    cy.fixture('kubilay').then(function (data) {
       this.data = data;
     });
   });
   const gmibankpom = new gmiBankPom();
-  it("login pozitif test", function() {
+  it.only("login pozitif test", function() {
     gmibankpom.getBank();
     gmibankpom.getLoginButonu().click();
     gmibankpom.getRegister().click();
