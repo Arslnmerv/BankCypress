@@ -2,8 +2,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
    
     return false
   })
-  describe("positive, negative, cancel Login", () => {
-    it("positiveLogin", () => {
+  describe("pozitive, negative, cancel Login", () => {
+    it("pozititiveLogin", () => {
       cy.visit("https://www.gmibank.com/");
       cy.get('#account-menu > .dropdown-toggle').click()
       cy.get('#login-item').click()
@@ -34,6 +34,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         cy.get('#username').type('Team69Admin')
         cy.get('#password').type('Team69+')
         cy.get('.btn-secondary > span').click()
-        cy.url().should('include', 'https://www.gmibank.com/')
+        cy.url().should('in', 'https://www.gmibank.com/')
       });
     });

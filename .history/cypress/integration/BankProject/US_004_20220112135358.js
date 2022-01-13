@@ -2,8 +2,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
    
     return false
   })
-  describe("positive, negative, cancel Login", () => {
-    it("positiveLogin", () => {
+  describe("pozitive, negative, cancel Login", () => {
+    it("pozititiveLogin", () => {
       cy.visit("https://www.gmibank.com/");
       cy.get('#account-menu > .dropdown-toggle').click()
       cy.get('#login-item').click()
