@@ -1,5 +1,17 @@
 {
-
+    "username": "employee",
+    "password": "password",
+    "adminUsername": "Team68Admin",
+    "adminPassword": "Team68+",
+    "firstName": "kerim",
+    "lastName": "yeter",
+    "email": "email@gmail.com",
+    "usernameRegister": "blablabla",
+    "passwordRegister": "Tac123?",
+    "Adress": " city mity tity",
+    "PhoneNumber": "123-456",
+    "SSN": "123-45-6789",
+    "gecersizSSN": "999-99-9999"
 
 
 

@@ -11,7 +11,7 @@
       });
     });
     const gmibankpom = new gmiBankPom();
-    it("login pozitif test", () => {
+    it.only("login pozitif test", () => {
       gmibankpom.getBank();
       gmibankpom.getLoginButonu().click();
       gmibankpom.getRegister().click();
@@ -41,7 +41,8 @@
       gmibankpom.getNewPasswordAgain().type(this.data.passwordRegister);
       gmibankpom.getRegisterButton().click();
     });
-    it.only('register pozitif test',()=>{
+    /*
+    it('register pozitif test',()=>{
       var faker=require('faker');
       gmibankpom.getBank();
       gmibankpom.getLoginButonu().click();
@@ -57,6 +58,7 @@
       gmibankpom.getNewPasswordAgain().type('Tac123?');
       gmibankpom.getRegisterButton().click();
     })
+    */
   });
   
   

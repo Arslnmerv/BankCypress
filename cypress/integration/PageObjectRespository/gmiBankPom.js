@@ -6,7 +6,7 @@ class gmiBankPom {
       return cy.get("#account-menu > .dropdown-toggle");
     }
     getRegister() {
-      return cy.get('[href=“/account/register”]');
+      return cy.get('[href="/account/register"]');
     }
     getSSN() {
       return cy.get("#ssn");
@@ -42,7 +42,7 @@ class gmiBankPom {
       return cy.get('#entity-menu > .dropdown-toggle')
     }
     getManagementCustomer() {
-      return cy.get('[href=“/tp-customer”]')
+      return cy.get('[href="/tp-customer"]')
     }
     getCreateCustomer() {
       return cy.get('#jh-create-entity')
@@ -57,10 +57,10 @@ class gmiBankPom {
       return cy.get('.Toastify__toast-body')
     }
     getLogoutButton() {
-      return cy.get('[href=“/logout”]')
+      return cy.get('[href="/logout"]')
     }
     getTransferMoney() {
-      return cy.get('[href=“/customer/tp-customer-accounts/transfer/120840"]')
+      return cy.get('[href="/customer/tp-customer-accounts/transfer/120840"]')
     }
     getAccountFrom(){
       return cy.get('#fromAccountId')
