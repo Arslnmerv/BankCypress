@@ -39,10 +39,22 @@ Cypress.Commands.add('LoginEmployee',()=> {
       cy.get('#password').type('team32team32-')
       cy.get('.btn-primary').click()
 })
+
 Cypress.Commands.add('CreateANewCustomer',()=> {
   cy.get('#entity-menu > .dropdown-toggle').click()
          cy.get('[href="/tp-customer"] > span').click()
          cy.get('#jh-create-entity > span').click()
 })
 
+
+
+Cypress.Commands.add('LoginCustomer',()=> {
+  cy.visit("https://www.gmibank.com/");
+      cy.get('#account-menu > .dropdown-toggle').click()
+      cy.get('#login-item').click()
+      cy.get('#username').type('omeraslan')
+      cy.get('#password').type('221626ebe.')
+      cy.get('.btn-primary').click();
+})
 import 'cypress-file-upload'
+

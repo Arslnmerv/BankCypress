@@ -10,8 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "cypress": "^9.2.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1"
+=======
+    "cypress": "^9.2.1",
+    "cypress-file-upload": "^5.0.8"
+>>>>>>> gokhan
   }
 }
