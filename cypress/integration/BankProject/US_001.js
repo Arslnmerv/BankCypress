@@ -1,17 +1,17 @@
-import gmiBankPom from "../Pom/gmiBankPom";
-
+import gmiBankPom from "../PageObjectRespository/gmiBankPom";
+///-<reference-types"cypress"-/>
 Cypress.on("uncaught:exception", (err, runnable) => {
   return false;
 });
 
 describe("US 001", () => {
   before(function () {
-    cy.fixture('creds').then(function (data) {
+    cy.fixture('kubilay').then(function (data) {
       this.data = data;
     });
   });
   const gmibankpom = new gmiBankPom();
-  it("login pozitif test", function() {
+  it.only("login pozitif test", function() {
     gmibankpom.getBank();
     gmibankpom.getLoginButonu().click();
     gmibankpom.getRegister().click();
@@ -42,7 +42,7 @@ describe("US 001", () => {
     gmibankpom.getRegisterButton().click();
     gmibankpom.getTextSSN().should('have.text','Ssn is invalid.')
   });
-  it.only("login negatif test", function() {
+  it("login negatif test", function() {
     gmibankpom.getBank();
     gmibankpom.getLoginButonu().click();
     gmibankpom.getRegister().click();
@@ -58,7 +58,9 @@ describe("US 001", () => {
     gmibankpom.getRegisterButton().click();
     gmibankpom.getText().should('include.text','error')
   });
-/*
+
+
+  /*
   it.only('register pozitif test',function(){
     var faker=require('faker'); 
     gmibankpom.getBank();
@@ -77,4 +79,5 @@ describe("US 001", () => {
 
   })
   */
+  
 });
