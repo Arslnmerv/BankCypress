@@ -1,5 +1,5 @@
 {
-    "username": "employee",
+"username": "employee",
     "password": "password",
     "adminUsername": "Team68Admin",
     "adminPassword": "Team68+",
@@ -12,8 +12,5 @@
     "PhoneNumber": "123-456",
     "SSN": "123-45-6789",
     "gecersizSSN": "999-99-9999"
-
-
-
 
 }

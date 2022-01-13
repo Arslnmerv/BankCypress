@@ -3,13 +3,13 @@ class gmiBankPom {
       return cy.visit("https://www.gmibank.com/");
     }
     getLoginButonu() {
-      return cy.get("#account-menu > .dropdown-toggle");
+      return cy.get("#account-menu > .dropdown-toggle")
     }
     getRegister() {
-      return cy.get('[href="/account/register"]');
+      return cy.get('[href="/account/register"]')
     }
     getSSN() {
-      return cy.get("#ssn");
+      return cy.get("#ssn")
     }
     getFirstName() {
       return cy.get("#firstname");

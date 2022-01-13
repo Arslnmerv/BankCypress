@@ -1,32 +1,32 @@
 
 
-  import gmiBankPom from "../PageObjectRespository/gmiBankPom";
+  import gmiBankPom from "../PageObjectRespository/gmiBankPom"
   Cypress.on("uncaught:exception", (err, runnable) => {
-    return false;
-  });
+    return false
+  })
   describe("US 001", () => {
-    before(function () {
-      cy.fixture("example").then(function (data) {
-        this.data = data;
-      });
-    });
-    const gmibankpom = new gmiBankPom();
-    it.only("login pozitif test", () => {
-      gmibankpom.getBank();
-      gmibankpom.getLoginButonu().click();
-      gmibankpom.getRegister().click();
-      gmibankpom.getSSN().type(this.data.SSN);
-      gmibankpom.getFirstName().type(this.data.firstName);
-      gmibankpom.getLastName().type(this.data.lastName);
-      gmibankpom.getAddress().type(this.data.Address);
-      gmibankpom.getPhoneNumber().type(this.data.PhoneNumber);
-      gmibankpom.getEmail().type(this.data.email);
-      gmibankpom.getUsername().type(this.data.usernameRegister);
-      gmibankpom.getNewPassword().type(this.data.passwordRegister);
-      gmibankpom.getNewPasswordAgain().type(this.data.passwordRegister);
-      gmibankpom.getRegisterButton().click();
-    });
-    it("login negatif test", () => {
+    before(function(){
+      cy.fixture('kubilay').then(function(data){
+          this.data = data
+      })
+  })
+    const gmibankpom = new gmiBankPom()
+    it("login pozitif test", function() {
+      gmibankpom.getBank()
+      gmibankpom.getLoginButonu().click()
+      gmibankpom.getRegister().click()
+      gmibankpom.getSSN().type(this.data.SSN)
+      gmibankpom.getFirstName().type(this.data.firstName)
+      gmibankpom.getLastName().type(this.data.lastName)
+      gmibankpom.getAddress().type(this.data.Address)
+      gmibankpom.getPhoneNumber().type(this.data.PhoneNumber)
+      gmibankpom.getEmail().type(this.data.email)
+      gmibankpom.getUsername().type(this.data.usernameRegister)
+      gmibankpom.getNewPassword().type(this.data.passwordRegister)
+      gmibankpom.getNewPasswordAgain().type(this.data.passwordRegister)
+      gmibankpom.getRegisterButton().click()
+    })
+    it.only("login negatif test",  function () {
       gmibankpom.getBank();
       gmibankpom.getLoginButonu().click();
       gmibankpom.getRegister().click();
