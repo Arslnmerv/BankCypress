@@ -59,21 +59,25 @@ describe("US 001", () => {
     gmibankpom.getText().should('include.text','error')
   });
 
+
+  /*
   it.only('register pozitif test',function(){
-    // gmibankpom.getBank();
-    // gmibankpom.getLoginButonu().click();
-    // gmibankpom.getRegister().click();
-    // gmibankpom.getSSN().type(faker.finance.account);
-    // gmibankpom.getFirstName().type(faker.name.firstName);
-    // gmibankpom.getLastName().type(faker.name.lastName);
-    // gmibankpom.getAddress().type(faker.address.streetAddress);
-    // gmibankpom.getPhoneNumber().type(faker.phone.phoneNumber);
-    // gmibankpom.getEmail().type(faker.internet.email);
-    // gmibankpom.getUsername().type(faker.finance.accountName);
-    // gmibankpom.getNewPassword().type('Tac123?');
-    // gmibankpom.getNewPasswordAgain().type('Tac123?');
-    // gmibankpom.getRegisterButton().click();
+    var faker=require('faker'); 
+    gmibankpom.getBank();
+    gmibankpom.getLoginButonu().click();
+    gmibankpom.getRegister().click();
+    gmibankpom.getSSN().type(faker.finance.account);
+    gmibankpom.getFirstName().type(faker.name.firstName);
+    gmibankpom.getLastName().type(faker.name.lastName);
+    gmibankpom.getAddress().type(faker.address.streetAddress);
+    gmibankpom.getPhoneNumber().type(faker.phone.phoneNumber);
+    gmibankpom.getEmail().type(faker.internet.email);
+    gmibankpom.getUsername().type(faker.finance.accountName);
+    gmibankpom.getNewPassword().type('Tac123?');
+    gmibankpom.getNewPasswordAgain().type('Tac123?');
+    gmibankpom.getRegisterButton().click();
 
   })
+  */
   
 });
