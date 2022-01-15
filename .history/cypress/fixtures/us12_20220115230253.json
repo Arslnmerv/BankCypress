@@ -1,0 +1,13 @@
+{
+    "firstname" : "ozgur" ,
+    "lastname" : "kus" ,
+    "middleInitial" : "h" ,
+    "email" : "ma34@gmail.com" ,
+    "mobileNumber" : "123-456-7890" ,
+    "phoneNumber" : "123-456-7890" ,
+    "zipCode" : "34025" ,
+    "validAddress" : "Merv Caddesi No:34" ,
+    "city" : "NYC" ,
+    "Ssn" : "123-45-6789" ,
+    "invalidState" : "Paris"
+}
