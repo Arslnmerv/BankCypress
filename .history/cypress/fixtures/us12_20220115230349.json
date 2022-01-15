@@ -1,0 +1,13 @@
+{
+    "firstname" : "ozgur" ,
+    "lastname" : "kus" ,
+    "middleInitial" : "h" ,
+    "email" : "ozgur@gmail.com" ,
+    "mobileNumber" : "123-456-7890" ,
+    "phoneNumber" : "123-456-7890" ,
+    "zipCode" : "34025" ,
+    "validAddress" : "Konyaaltı" ,
+    "city" : "NYC" ,
+    "Ssn" : "122-45-6789" ,
+    "invalidState" : "Marmara"
+}
