@@ -34,7 +34,6 @@ describe ('Sistem, kullanicinin kendi hesabini yönetmesine izin vermelidir.' ,(
      cy.wait(20000)
      page.confirmDelete().should('be.visible')
 
-
    })
    
 })

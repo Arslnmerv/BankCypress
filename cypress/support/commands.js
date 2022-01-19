@@ -35,8 +35,11 @@ Cypress.Commands.add('LoginEmployee',()=> {
     cy.visit("https://www.gmibank.com/")
       cy.get('#account-menu > .dropdown-toggle').click()
       cy.get('#login-item').click()
+      cy.wait(1000)
       cy.get('#username').type('employee32')
+      cy.wait(1000)
       cy.get('#password').type('team32team32-')
+      cy.wait(1000)
       cy.get('.btn-primary').click()
 })
 
@@ -56,5 +59,14 @@ Cypress.Commands.add('LoginCustomer',()=> {
       cy.get('#password').type('221626ebe.')
       cy.get('.btn-primary').click();
 })
-import 'cypress-file-upload'
 
+Cypress.Commands.add('LoginCustomer2',()=> {
+  cy.visit("https://www.gmibank.com/");
+      cy.get('#account-menu > .dropdown-toggle').click()
+      cy.get('#login-item').click()
+      cy.get('#username').type('Tester')
+      cy.get('#password').type('AliVeli+1')
+      cy.get('.btn-primary').click();
+
+})
+import 'cypress-file-upload'

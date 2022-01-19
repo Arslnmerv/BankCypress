@@ -22,7 +22,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         cy.get('#account-menu > .dropdown-toggle').click()
         cy.get('#login-item').click()
         cy.get('#username').type('Team69Admin')
-        cy.get('#password').type('Team69')
+        cy.get('#password').type('Team69')//yanlis password
         cy.get('.btn-primary > span').click()
         cy.get('strong').should('include.text','Failed to sign in!')
       });
@@ -36,4 +36,5 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         cy.get('.btn-secondary > span').click()
         cy.url().should('include', 'https://www.gmibank.com/')
       });
+      
     });
