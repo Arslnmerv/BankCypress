@@ -37,7 +37,9 @@ Cypress.Commands.add('LoginEmployee',()=> {
       cy.get('#login-item').click()
       cy.wait(1000)
       cy.get('#username').type('employee32')
+      cy.wait(1000)
       cy.get('#password').type('team32team32-')
+      cy.wait(1000)
       cy.get('.btn-primary').click()
 })
 
