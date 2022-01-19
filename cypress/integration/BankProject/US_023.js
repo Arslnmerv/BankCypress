@@ -7,56 +7,23 @@ Oluşturduğunuz tüm kayıt sahiplerini okuyun ve bunları veri kümenizden do�
 "Read all registrants you created and validate them 1 by 1
 Oluşturduğunuz tüm kayıt sahiplerini okuyun ve bunları tek tek doğrulayın"
 */
-
+Cypress.on("uncaught:exception", (err, runnable) => {
+  return false;
+});
 // describe('US_023, Request', () => {
-//     //XHR, JavaScript ile sunulmus bir API
-//     //Web sitesini es zamanli olarak arka planda calisan olaylari takip eder.
-   
-       
-//     //const requestUrl = "https://www.gmibank.com/api/tp-account-registrations"
 
-//     it('TC_001', () => {
+      
+//     it.only('TC_001', () => {
         
-//         cy.request({ 
-//             url: "https://www.gmibank.com/api/tp-account-registrations",
+//         cy.api({ 
+//             url: "api/tp-account-registrations",
 //             method: 'GET',
 //             auth: {
-//                 username: "team68Admin",
-//                 password: "Team68" ,
+//                username: 'team69Admin' , 
+//                password: 'Team69+' ,
 //               },
+//             }).its('status')
+//             .should('eq',200);
 //             })
-            
-
-//            // assert.equal(response.status, 200)
-//             //expect(response.statusText).to.eq('OK')
+       
 //         })
-//     })
-    describe('Logging In - Basic Auth', function () {
-        // we can use these values to log in
-        const username = 'team68Admin'
-        const password = 'Team68+'
-      
-        context('cy.request', function() {
-          // https://on.cypress.io/request
-      
-          it('without authorization gets 401', () => {
-            cy.request({
-              url: 'https://www.gmibank.com/api/tp-account-registrations',
-              failOnStatusCode: false,
-            }).its('status').should('equal', 401)
-          })
-      
-          it.only('with authorization', () => {
-            cy.request({
-              url: 'https://www.gmibank.com/api/tp-account-registrations',
-              auth: {
-                username, password,
-              },
-            }).then(response =>{
-              expect(response.body).to.have.keys(["id", "ssn"]);
-            })
-            // .its('status').should('equal', 200)
-          })
-        })
-    })
-

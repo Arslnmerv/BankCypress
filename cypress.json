@@ -1,1 +1,5 @@
-{}
+{
+
+    "baseUrl" : "https://www.gmibank.com/",
+    "integrationFolder": "cypress/integration/api-tests"
+}
