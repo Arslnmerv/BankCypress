@@ -35,6 +35,7 @@ Cypress.Commands.add('LoginEmployee',()=> {
     cy.visit("https://www.gmibank.com/")
       cy.get('#account-menu > .dropdown-toggle').click()
       cy.get('#login-item').click()
+      cy.wait(1000)
       cy.get('#username').type('employee32')
       cy.get('#password').type('team32team32-')
       cy.get('.btn-primary').click()

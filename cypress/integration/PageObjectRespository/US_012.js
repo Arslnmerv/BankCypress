@@ -79,7 +79,7 @@ class US_012 {
            return cy.get('.invalid-feedback')
        }
        getSaveButton() {
-           return cy.get('#save-entity')
+           return cy.get('#save-entity > span')
        }
        getCity() {
            return cy.get('#tp-customer-city')
@@ -90,5 +90,21 @@ class US_012 {
        getCountry() {
            return cy.get('#tp-customer-country')
        }
+       getDeleteButton(){
+           return cy.get(':nth-child(2) > .text-right > .btn-group > .btn-danger > .d-none > span')
+       }
+       getConfirmDeletion(){
+       return cy.get('.modal-title > span')
+       }
+       getDeleteLast(){
+           return cy.get('#jhi-confirm-delete-tPCustomer > span')
+       }
+       getInternalServerError(){
+           return cy.get('.Toastify__toast-body')
+       }
+       getClosePopup(){
+           return cy.get('.close > span')
+       }
+      
 }
 export default US_012
