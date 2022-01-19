@@ -6,7 +6,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 describe('DELETE', () => {
       it('Delete states data', () => {
         cy.api({
-           url: '/api/tp-states/22713',
+           url: '/api/tp-states/22714',
           method:'DELETE',
            auth: {
                username: 'team69Admin',
