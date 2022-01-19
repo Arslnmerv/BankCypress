@@ -36,4 +36,5 @@ Cypress.on('uncaught:exception', (err, runnable) => {
         cy.get('.btn-secondary > span').click()
         cy.url().should('include', 'https://www.gmibank.com/')
       });
+      
     });
