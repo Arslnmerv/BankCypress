@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.2.1",
+    "@bahmutov/cy-api": "^1.6.2",
+    "cypress": "^9.2.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
     "faker": "^6.6.6"
