@@ -51,7 +51,7 @@
    Kullanici Olusturdugu hesap menusune tiklar
    Kullanici Hesap menusunde user info iconuna tiklar
 
-    */
+    */ 
 
   })
 
